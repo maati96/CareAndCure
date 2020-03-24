@@ -24,15 +24,20 @@ class LoginVC: UIViewController {
     @IBOutlet var personBtnChecked: UIButton!
     @IBOutlet weak var createnewAccountBtn: UIButton!
     var validation = Validation()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setupDelegateTF()
     }
     
+    func setupDelegateTF()  {
+        emailTextFiled.delegate = self
+        passwordTextField.delegate = self
+    }
     
     @IBAction func nextBtnPressed(_ sender: UIButton) {
-
+        
     }
     
     @IBAction func checkBoxTapped(_ sender: UIButton) {
@@ -47,26 +52,28 @@ class LoginVC: UIViewController {
     
     
     @IBAction func createNewAccountBtnPressed(_ sender: UIButton) {
-        guard let email = emailTextFiled.text,  let password = passwordTextField.text else {
-                return
-             }
         
-        let isValidateEmail = self.validation.validateEmailId(emailID: email)
-        if (isValidateEmail == false) {
-           print("Incorrect Email")
-           return
-        }
         
-        let isValidatePass = self.validation.validatePassword(password: password)
-        if (isValidatePass == false) {
-           print("Incorrect Pass")
-           return
-        }
-        if (isValidateEmail == true || isValidatePass == true) {
-           print("All fields are correct")
-        }
     }
-   
+    
     
 }
 
+extension LoginVC: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        if emailTextFiled == textField || passwordTextField == textField  {
+            validateTF()
+        }
+    }
+    
+    func validateTF() {
+        guard !emailTextFiled.text!.isEmpty else { return }
+        guard !passwordTextField.text!.isEmpty else { return }
+    }
+    
+}

@@ -6,4 +6,5 @@ target 'CareAndCure' do
   use_frameworks!
   # Pods for CareAndCure
   pod 'iOSDropDown'
+  pod 'IQKeyboardManagerSwift', '~> 6.5'
 end

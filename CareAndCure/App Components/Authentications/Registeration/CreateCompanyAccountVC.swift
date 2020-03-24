@@ -15,6 +15,7 @@ class CreateCompanyAccountVC: UIViewController {
             createAccountBtn.layer.cornerRadius = 10
         }
     }
+    
     var validation = Validation()
     @IBOutlet weak var phrmacyNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -22,48 +23,46 @@ class CreateCompanyAccountVC: UIViewController {
     @IBOutlet weak var locationBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        createAccountBtn.isEnabled = false
+        createAccountBtn.isEnabled = false
+        setupDelegateTextField()
+        
+    }
+    
+    func  setupDelegateTextField() {
+        phoneNumberTextField.delegate = self
+        emailTextField.delegate = self
+        phoneNumberTextField.delegate = self
     }
     
     
-    
     @IBAction func createAccountPressed(_ sender: UIButton) {
-        guard let phrmacyName = phrmacyNameTextField.text, let email = emailTextField.text,
-            let phone = phoneNumberTextField.text else {
-                
-                return
-        }
-        let isValidateName = self.validation.validateName(name: phrmacyName)
-        if (isValidateName == false) {
-            createAccountBtn.isEnabled = false
-            print("Incorrect Name")
-            
-        } else {
-            createAccountBtn.isEnabled = true
-        }
-        let isValidateEmail = self.validation.validateEmailId(emailID: email)
-        if (isValidateEmail == false) {
-            print("Incorrect Email")
-            createAccountBtn.isEnabled = false
-
-        }else {
-            createAccountBtn.isEnabled = true
-        }
         
-        let isValidatePhone = self.validation.validaPhoneNumber(phoneNumber: phone)
-        if (isValidatePhone == false) {
-            createAccountBtn.isEnabled = false
-
-            print("Incorrect Phone")
-            return
-        }else {
-            createAccountBtn.isEnabled = true
-        }
-        if (isValidateName == true || isValidateEmail == true  || isValidatePhone == true) {
-            print("All fields are correct")
-        }
+        
     }
     
 }
 
 
+extension CreateCompanyAccountVC: UITextFieldDelegate {
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        if phoneNumberTextField == textField || phrmacyNameTextField == textField || emailTextField == textField {
+            validateTF()
+        }
+    }
+    
+    func validateTF() {
+        guard !phrmacyNameTextField.text!.isEmpty else { return }
+        guard !phoneNumberTextField.text!.isEmpty else { return }
+        guard !emailTextField.text!.isEmpty else { return }
+        
+        guard self.validation.validateEmailId(emailID: emailTextField.text!) else { return }
+        guard self.validation.validaPhoneNumber(phoneNumber: phoneNumberTextField.text!) else { return }
+        createAccountBtn.isEnabled = true
+    }
+}

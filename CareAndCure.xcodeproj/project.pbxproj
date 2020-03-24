@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		94F1A97E9777B48B4B8CF0C1 /* Pods_CareAndCure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9474F10B9EAD3900FF9554F /* Pods_CareAndCure.framework */; };
-		DAAB934A242A7BD900C99F36 /* CreateCompanyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB9349242A7BD900C99F36 /* CreateCompanyAccountVC.swift */; };
-		E43051212428102D009011C1 /* CreateCompanyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43051202428102D009011C1 /* CreateCompanyAccountVC.swift */; };
 		E430512324281D65009011C1 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E430512224281D65009011C1 /* AlertService.swift */; };
 		E430512524282372009011C1 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E430512424282372009011C1 /* ProfileVC.swift */; };
 		E43A4DAC2413056B00FBCBAB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A4DAB2413056B00FBCBAB /* HomeVC.swift */; };
@@ -18,6 +16,8 @@
 		E43A4DB5241318E300FBCBAB /* DroidKufi-Bold.menu in Resources */ = {isa = PBXBuildFile; fileRef = E43A4DB1241318E300FBCBAB /* DroidKufi-Bold.menu */; };
 		E43A4DB6241318E300FBCBAB /* DroidKufi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E43A4DB2241318E300FBCBAB /* DroidKufi-Regular.ttf */; };
 		E43A4DB7241318E300FBCBAB /* DroidKufi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E43A4DB3241318E300FBCBAB /* DroidKufi-Bold.ttf */; };
+		E45C9C45242AA17A00AEA6E5 /* CreateIndividualAcountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C9C44242AA17A00AEA6E5 /* CreateIndividualAcountVC.swift */; };
+		E45C9C47242AA18400AEA6E5 /* CreateCompanyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C9C46242AA18400AEA6E5 /* CreateCompanyAccountVC.swift */; };
 		E462A89D2411BFD3008554DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462A89C2411BFD3008554DA /* AppDelegate.swift */; };
 		E462A89F2411BFD3008554DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462A89E2411BFD3008554DA /* SceneDelegate.swift */; };
 		E462A8A12411BFD3008554DA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462A8A02411BFD3008554DA /* LoginVC.swift */; };
@@ -33,8 +33,6 @@
 /* Begin PBXFileReference section */
 		6FB3CB1DB49C0FAC007A1033 /* Pods-CareAndCure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareAndCure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareAndCure/Pods-CareAndCure.debug.xcconfig"; sourceTree = "<group>"; };
 		704FED858AD05126874E9019 /* Pods-CareAndCure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareAndCure.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareAndCure/Pods-CareAndCure.release.xcconfig"; sourceTree = "<group>"; };
-		DAAB9349242A7BD900C99F36 /* CreateCompanyAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCompanyAccountVC.swift; sourceTree = "<group>"; };
-		E43051202428102D009011C1 /* CreateCompanyAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyAccountVC.swift; sourceTree = "<group>"; };
 		E430512224281D65009011C1 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		E430512424282372009011C1 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		E43A4DAB2413056B00FBCBAB /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -43,6 +41,8 @@
 		E43A4DB1241318E300FBCBAB /* DroidKufi-Bold.menu */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidKufi-Bold.menu"; sourceTree = "<group>"; };
 		E43A4DB2241318E300FBCBAB /* DroidKufi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidKufi-Regular.ttf"; sourceTree = "<group>"; };
 		E43A4DB3241318E300FBCBAB /* DroidKufi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidKufi-Bold.ttf"; sourceTree = "<group>"; };
+		E45C9C44242AA17A00AEA6E5 /* CreateIndividualAcountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateIndividualAcountVC.swift; path = "../../../../../CareAndCure 2/CareAndCure/CreateIndividualAcountVC.swift"; sourceTree = "<group>"; };
+		E45C9C46242AA18400AEA6E5 /* CreateCompanyAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCompanyAccountVC.swift; sourceTree = "<group>"; };
 		E462A8992411BFD3008554DA /* CareAndCure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareAndCure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E462A89C2411BFD3008554DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E462A89E2411BFD3008554DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,8 +119,8 @@
 		DA5B67E0242A7B6C0077C3AD /* Registeration */ = {
 			isa = PBXGroup;
 			children = (
-				DAAB9349242A7BD900C99F36 /* CreateCompanyAccountVC.swift */,
-				E43051202428102D009011C1 /* CreateCompanyAccountVC.swift */,
+				E45C9C46242AA18400AEA6E5 /* CreateCompanyAccountVC.swift */,
+				E45C9C44242AA17A00AEA6E5 /* CreateIndividualAcountVC.swift */,
 			);
 			path = Registeration;
 			sourceTree = "<group>";
@@ -326,10 +326,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CareAndCure/Pods-CareAndCure-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSDropDown/iOSDropDown.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSDropDown.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,14 +364,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45C9C47242AA18400AEA6E5 /* CreateCompanyAccountVC.swift in Sources */,
 				E462A8A12411BFD3008554DA /* LoginVC.swift in Sources */,
+				E45C9C45242AA17A00AEA6E5 /* CreateIndividualAcountVC.swift in Sources */,
 				E43A4DAC2413056B00FBCBAB /* HomeVC.swift in Sources */,
 				E48BAF0F2427CC9C00ED1914 /* OrderTreatmentVC.swift in Sources */,
-				E43051212428102D009011C1 /* CreateCompanyAccountVC.swift in Sources */,
 				E430512324281D65009011C1 /* AlertService.swift in Sources */,
 				E462A89D2411BFD3008554DA /* AppDelegate.swift in Sources */,
 				E43A4DAE241312B100FBCBAB /* TreatmentDetailsVC.swift in Sources */,
-				DAAB934A242A7BD900C99F36 /* CreateCompanyAccountVC.swift in Sources */,
 				E462A89F2411BFD3008554DA /* SceneDelegate.swift in Sources */,
 				E430512524282372009011C1 /* ProfileVC.swift in Sources */,
 				E47071D02429C5CC0022B62F /* Validation.swift in Sources */,

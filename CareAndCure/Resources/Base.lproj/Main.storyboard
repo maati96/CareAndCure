@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -28,8 +27,8 @@
                         <color key="tintColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9wW-ka-FcR" kind="relationship" relationship="viewControllers" id="GKT-GD-oxO"/>
-                        <segue destination="twd-Zp-GmF" kind="relationship" relationship="viewControllers" id="lrI-mz-imd"/>
+                        <segue destination="UmC-Um-73c" kind="relationship" relationship="viewControllers" id="GKT-GD-oxO"/>
+                        <segue destination="cP5-o8-CNL" kind="relationship" relationship="viewControllers" id="lrI-mz-imd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FVd-kd-ubk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -105,7 +104,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eTp-Hy-py9">
-                                <rect key="frame" x="171.5" y="348.5" width="173.5" height="39"/>
+                                <rect key="frame" x="101" y="348.5" width="173.5" height="39"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAI-4N-C5D">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="39"/>
@@ -126,67 +125,15 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BHB-jS-ua9" userLabel="checkBox">
-                                <rect key="frame" x="30" y="417.5" width="315" height="82"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="qc2-iq-QbH">
-                                        <rect key="frame" x="0.0" y="8" width="272" height="66"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="أفراد" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFu-yK-3yR">
-                                                <rect key="frame" x="120.5" y="0.0" width="31" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صيدليات" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nT-Aw-q9J">
-                                                <rect key="frame" x="105.5" y="45.5" width="61.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LRH-bE-PEG">
-                                        <rect key="frame" x="280" y="0.0" width="35" height="82"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJi-3g-KpN" userLabel="personBtn">
-                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="35" id="KCf-7Z-9fo"/>
-                                                    <constraint firstAttribute="height" constant="35" id="rq5-pR-2mB"/>
-                                                </constraints>
-                                                <state key="normal" image="checkbox"/>
-                                                <connections>
-                                                    <action selector="checkBoxTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NJt-Rb-AVQ"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEb-Rx-our" userLabel="PharmaciesBtn">
-                                                <rect key="frame" x="0.0" y="47" width="35" height="35"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="35" id="3lH-iI-Gf6"/>
-                                                    <constraint firstAttribute="width" constant="35" id="Zh8-lD-twf"/>
-                                                </constraints>
-                                                <state key="normal" image="unchecked"/>
-                                                <connections>
-                                                    <action selector="checkBoxTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t94-k1-Cur"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.45098039215686275" green="0.68235294117647061" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="fxF-sv-Qur" firstAttribute="trailing" secondItem="BHB-jS-ua9" secondAttribute="trailing" id="0gf-dW-sQo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wKD-Ec-utc" secondAttribute="trailing" constant="20" id="3DT-4P-vpf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kEx-SS-Gz5" secondAttribute="trailing" constant="20" id="3KG-wf-BRI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dyp-n7-HC9" secondAttribute="trailing" constant="30" id="8Xl-5b-ogd"/>
                             <constraint firstItem="kEx-SS-Gz5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8xG-gu-gq1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BHB-jS-ua9" secondAttribute="trailing" constant="30" id="Elu-6M-KNJ"/>
                             <constraint firstItem="eTp-Hy-py9" firstAttribute="top" secondItem="fxF-sv-Qur" secondAttribute="bottom" constant="8" id="FTW-PM-dOG"/>
                             <constraint firstItem="o4A-cG-PIG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ie7-hx-zAu"/>
-                            <constraint firstItem="BHB-jS-ua9" firstAttribute="top" secondItem="eTp-Hy-py9" secondAttribute="bottom" constant="30" id="MIQ-mm-aiJ"/>
                             <constraint firstItem="fxF-sv-Qur" firstAttribute="top" secondItem="Dyp-n7-HC9" secondAttribute="bottom" constant="23" id="Pir-Jf-IYW"/>
                             <constraint firstItem="kEx-SS-Gz5" firstAttribute="top" secondItem="wKD-Ec-utc" secondAttribute="bottom" constant="30" id="RWV-f5-jfS"/>
                             <constraint firstItem="fxF-sv-Qur" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Rcv-rd-Fkw"/>
@@ -194,11 +141,10 @@
                             <constraint firstItem="Dyp-n7-HC9" firstAttribute="top" secondItem="kEx-SS-Gz5" secondAttribute="bottom" constant="60" id="ckT-nV-rSB"/>
                             <constraint firstItem="wKD-Ec-utc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jm7-rL-ZTt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="o4A-cG-PIG" secondAttribute="trailing" constant="30" id="jzh-X4-9uj"/>
+                            <constraint firstItem="eTp-Hy-py9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lR2-b4-Pmu"/>
                             <constraint firstItem="Dyp-n7-HC9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="lj5-hn-OXo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eTp-Hy-py9" secondAttribute="trailing" constant="30" id="n6T-1B-W74"/>
                             <constraint firstItem="wKD-Ec-utc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="nN5-EZ-yta"/>
                             <constraint firstItem="o4A-cG-PIG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="naQ-Wu-ge3"/>
-                            <constraint firstItem="BHB-jS-ua9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="wtQ-Dg-Ynq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o4A-cG-PIG" secondAttribute="bottom" constant="30" id="y5o-j7-Vkl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -208,15 +154,13 @@
                         <outlet property="emailTextFiled" destination="jR2-Hh-Rvk" id="y5u-Wg-kH6"/>
                         <outlet property="nextBtn" destination="o4A-cG-PIG" id="5yH-mf-Biu"/>
                         <outlet property="passwordTextField" destination="3LV-4j-7Pw" id="7Fg-cV-Srz"/>
-                        <outlet property="personBtnChecked" destination="MJi-3g-KpN" id="tqa-9Q-c0H"/>
-                        <outlet property="pharmaciesBtn" destination="BEb-Rx-our" id="HUt-yP-sOC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="353" y="448"/>
         </scene>
-        <!-- أفراد-->
+        <!--Create Individual AcountVC-->
         <scene sceneID="cbl-8W-ATs">
             <objects>
                 <viewController storyboardIdentifier="createPersonalAccountVC" id="9wW-ka-FcR" customClass="CreateIndividualAcountVC" customModule="CareAndCure" customModuleProvider="target" sceneMemberID="viewController">
@@ -225,20 +169,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="iss-DD-Gy4">
-                                <rect key="frame" x="20" y="30" width="335" height="80"/>
+                                <rect key="frame" x="20" y="74" width="335" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="COp-7c-ozR"/>
                                     <constraint firstAttribute="height" constant="80" id="dV2-vB-THr"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إنشاء حساب أفراد" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae8-gd-7zi">
-                                <rect key="frame" x="20" y="170" width="335" height="47.5"/>
+                                <rect key="frame" x="20" y="214" width="335" height="47.5"/>
                                 <fontDescription key="fontDescription" name="DroidArabicKufi-Bold" family="Droid Arabic Kufi" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ajt-ee-KaO">
-                                <rect key="frame" x="40" y="277.5" width="295" height="228"/>
+                                <rect key="frame" x="40" y="321.5" width="295" height="228"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="الاسم الأول" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e7S-Yb-Bse">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="45"/>
@@ -280,7 +224,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhG-OR-NlD">
-                                <rect key="frame" x="300" y="521.5" width="35" height="35"/>
+                                <rect key="frame" x="300" y="565.5" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="2bW-O8-CBW"/>
                                     <constraint firstAttribute="height" constant="35" id="IFX-uu-PwY"/>
@@ -308,8 +252,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QwN-8p-XMz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title=" أفراد" id="D59-qe-xHm"/>
-                    <navigationItem key="navigationItem" id="uj5-yS-fBp"/>
+                    <navigationItem key="navigationItem" id="uj5-yS-fBp">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="VNV-Zn-p6v">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NFq-wY-QND">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="رجوع">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="9wW-ka-FcR" eventType="touchUpInside" id="4eC-wh-2EQ"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="createAccBtn" destination="SKm-lC-9s7" id="KRn-Ev-4UY"/>
                         <outlet property="emailAdressTextField" destination="mhz-gx-bra" id="H6h-Vo-6og"/>
@@ -321,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PKC-36-YYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="353" y="-342"/>
+            <point key="canvasLocation" x="2231.1999999999998" y="-342.27886056971516"/>
         </scene>
         <!--CreateCompnyesAccount-->
         <scene sceneID="ATy-tS-kst">
@@ -332,7 +288,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="f9d-oN-OkJ">
-                                <rect key="frame" x="20" y="30" width="335" height="80"/>
+                                <rect key="frame" x="20" y="74" width="335" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="c9M-6X-mlP"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="oyl-Nj-Naa"/>
@@ -340,13 +296,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إنشاء حساب الشركات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5z-LB-g9G">
-                                <rect key="frame" x="20" y="170" width="335" height="47.5"/>
+                                <rect key="frame" x="20" y="214" width="335" height="47.5"/>
                                 <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2q3-68-N9h">
-                                <rect key="frame" x="40" y="277.5" width="295" height="167"/>
+                                <rect key="frame" x="40" y="321.5" width="295" height="167"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اسم الصيدليه" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="taJ-se-eoc">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="45"/>
@@ -375,7 +331,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erp-6k-dWZ">
-                                <rect key="frame" x="300" y="460.5" width="35" height="35"/>
+                                <rect key="frame" x="300" y="504.5" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="blg-6p-Jum"/>
                                     <constraint firstAttribute="height" constant="35" id="wDc-bF-wTk"/>
@@ -418,8 +374,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G8F-bd-hSq"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="صيدليات" id="M14-u8-9q6"/>
-                    <navigationItem key="navigationItem" id="LGe-Up-Zkt"/>
+                    <navigationItem key="navigationItem" id="LGe-Up-Zkt">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="cp2-gm-Vst">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6Lx-Q0-SdO">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="رجوع">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="twd-Zp-GmF" eventType="touchUpInside" id="lB3-eQ-1FT"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="createAccountBtn" destination="OqY-Mt-Ufz" id="04g-u7-Skl"/>
                         <outlet property="emailTextField" destination="KTG-Fe-Xmo" id="grK-Jp-Gby"/>
@@ -430,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6j9-5C-fLK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-606" y="-342"/>
+            <point key="canvasLocation" x="332" y="-342.27886056971516"/>
         </scene>
         <!--تفاصيل العلاج-->
         <scene sceneID="f9r-BC-3dI">
@@ -465,7 +433,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ue7-ha-onr">
-                                <rect key="frame" x="208.5" y="196" width="150.5" height="468.5"/>
+                                <rect key="frame" x="208.5" y="196" width="150.5" height="481"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم العلاج" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dqm-u1-5v3">
                                         <rect key="frame" x="28.5" y="0.0" width="93.5" height="34.5"/>
@@ -475,16 +443,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lv8-5U-a4U">
-                                        <rect key="frame" x="25.5" y="34.5" width="99.5" height="334"/>
+                                        <rect key="frame" x="25.5" y="34.5" width="99.5" height="346.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="مجاني" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tp3-52-geT">
-                                                <rect key="frame" x="0.0" y="151" width="46.5" height="32.5"/>
+                                                <rect key="frame" x="0.0" y="157" width="46.5" height="32.5"/>
                                                 <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="السعر: " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEC-8e-V2a">
-                                                <rect key="frame" x="46.5" y="151" width="53" height="32.5"/>
+                                                <rect key="frame" x="46.5" y="157" width="53" height="32.5"/>
                                                 <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -492,7 +460,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" baselineRelativeArrangement="YES" id="Ekv-wu-lgR">
-                                        <rect key="frame" x="25.5" y="368.5" width="100" height="32.5"/>
+                                        <rect key="frame" x="25.5" y="381" width="100" height="32.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="مجاني" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMN-ei-ReD">
@@ -511,7 +479,7 @@
                                         <viewLayoutGuide key="safeArea" id="fum-3N-uWW"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EY7-nH-aEr">
-                                        <rect key="frame" x="2.5" y="401" width="145.5" height="32.5"/>
+                                        <rect key="frame" x="2.5" y="413.5" width="145.5" height="32.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="6-2020" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idB-h2-6k9">
                                                 <rect key="frame" x="0.0" y="0.0" width="69.5" height="32.5"/>
@@ -528,7 +496,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mQY-S3-5vk">
-                                        <rect key="frame" x="28" y="433.5" width="95" height="35"/>
+                                        <rect key="frame" x="28" y="446" width="95" height="35"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="العنوان" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhM-qK-c49">
                                                 <rect key="frame" x="0.0" y="1.5" width="52" height="32.5"/>
@@ -575,11 +543,11 @@
             <objects>
                 <viewController storyboardIdentifier="homeVC" id="z4J-60-hTj" customClass="HomeVC" customModule="CareAndCure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TCY-Qv-PKy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aWo-Wj-D8G">
-                                <rect key="frame" x="17.5" y="66" width="340" height="45"/>
+                                <rect key="frame" x="17.5" y="54" width="340" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="السعر" borderStyle="roundedRect" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="JOI-BY-tay" customClass="DropDown" customModule="iOSDropDown">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
@@ -611,7 +579,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dC8-eU-ArT">
-                                <rect key="frame" x="0.0" y="119" width="375" height="479"/>
+                                <rect key="frame" x="0.0" y="107" width="375" height="511"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -658,30 +626,30 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Tb-du-Bgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2585" y="-342"/>
+            <point key="canvasLocation" x="4463.1999999999998" y="-342.27886056971516"/>
         </scene>
         <!--OrderTreatement-->
         <scene sceneID="X02-Bi-van">
             <objects>
                 <viewController title="OrderTreatment" id="Zae-VL-TzR" userLabel="OrderTreatement" customClass="OrderTreatmentVC" customModule="CareAndCure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sKn-32-Ndl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="YQc-a1-PVB">
-                                <rect key="frame" x="30" y="86" width="315" height="80"/>
+                                <rect key="frame" x="30" y="74" width="315" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="NS1-ao-O5Y"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نشر علاج" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47S-9d-ueP">
-                                <rect key="frame" x="141" y="186" width="93" height="42"/>
+                                <rect key="frame" x="141" y="174" width="93" height="42"/>
                                 <fontDescription key="fontDescription" name="DroidArabicKufi-Bold" family="Droid Arabic Kufi" pointSize="22"/>
                                 <color key="textColor" red="0.92156862750000001" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="IpE-wb-v9F">
-                                <rect key="frame" x="286" y="244" width="59" height="17"/>
+                                <rect key="frame" x="286" y="232" width="59" height="17"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="اسم العلاج" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yca-zc-RwT">
                                         <rect key="frame" x="0.0" y="0.0" width="59" height="17"/>
@@ -691,7 +659,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cgo-oZ-Zgn">
-                                <rect key="frame" x="191" y="269" width="168" height="82"/>
+                                <rect key="frame" x="191" y="257" width="168" height="82"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eqO-lP-qcX">
                                         <rect key="frame" x="0.0" y="3" width="80" height="76"/>
@@ -737,14 +705,14 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tradement" translatesAutoresizingMaskIntoConstraints="NO" id="oXe-qd-vYP">
-                                <rect key="frame" x="8" y="244" width="100" height="100"/>
+                                <rect key="frame" x="8" y="232" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="YEr-lQ-2sr"/>
                                     <constraint firstAttribute="height" constant="100" id="xHX-Wd-PL7"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="gml-eB-8Zh">
-                                <rect key="frame" x="193" y="359" width="142" height="30"/>
+                                <rect key="frame" x="193" y="347" width="142" height="30"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="العنوان" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbx-jF-pex" customClass="DropDown" customModule="iOSDropDown">
                                         <rect key="frame" x="0.0" y="6.5" width="80" height="17"/>
@@ -765,7 +733,7 @@
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="تاريخ الصلاحيه" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ty9-Ri-tjj">
-                                <rect key="frame" x="235" y="405" width="100" height="40"/>
+                                <rect key="frame" x="235" y="393" width="100" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="1Qw-4N-UDh"/>
                                     <constraint firstAttribute="height" constant="40" id="c1K-zT-g3B"/>
@@ -774,7 +742,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wL5-J0-7cR">
-                                <rect key="frame" x="30" y="518" width="315" height="50"/>
+                                <rect key="frame" x="30" y="538" width="315" height="50"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pzm-JZ-Qmu"/>
@@ -784,7 +752,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sk8-ah-YPl">
-                                <rect key="frame" x="16" y="352" width="84" height="30"/>
+                                <rect key="frame" x="16" y="340" width="84" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="f9E-ry-RXJ"/>
                                 </constraints>
@@ -843,7 +811,7 @@
                     <tabBarItem key="tabBarItem" title="الأدوية" image="house.fill" catalog="system" id="dzM-XF-W0m"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bJL-rq-iJo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -881,7 +849,7 @@
                     <tabBarItem key="tabBarItem" title="طلب" image="staroflife.fill" catalog="system" id="gef-UU-rb6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5V4-ll-LHx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -898,11 +866,11 @@
             <objects>
                 <viewController title="Profile" id="tmP-Xx-cfd" customClass="ProfileVC" customModule="CareAndCure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="51M-10-c5l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhd-V6-cIX">
-                                <rect key="frame" x="127.5" y="30" width="120" height="120"/>
+                                <rect key="frame" x="127.5" y="74" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="CM8-Qr-UGj"/>
                                     <constraint firstAttribute="height" constant="120" id="f6D-vU-cXa"/>
@@ -912,7 +880,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eVk-AP-rR0">
-                                <rect key="frame" x="127.5" y="21.5" width="120" height="117"/>
+                                <rect key="frame" x="127.5" y="65.5" width="120" height="117"/>
                                 <color key="tintColor" red="0.25098039220000001" green="0.43921568630000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="1Lr-nc-lSr"/>
@@ -920,7 +888,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5Wz-AK-5Ke">
-                                <rect key="frame" x="119.5" y="156" width="136.5" height="67.5"/>
+                                <rect key="frame" x="119.5" y="200" width="136.5" height="67.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="محمد أبو المعاطي" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hok-gr-1hj">
                                         <rect key="frame" x="0.0" y="0.0" width="136.5" height="32.5"/>
@@ -980,24 +948,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lIS-o4-QQp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5220" y="-342.27886056971516"/>
+            <point key="canvasLocation" x="7098.3999999999996" y="-342.27886056971516"/>
+        </scene>
+        <!--صيدليات-->
+        <scene sceneID="VFo-nI-aZE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cP5-o8-CNL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="صيدليات" id="M14-u8-9q6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="onO-K5-g1i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="twd-Zp-GmF" kind="relationship" relationship="rootViewController" id="kbL-Bu-gGl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kM2-U7-Y4o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-607.20000000000005" y="-342.27886056971516"/>
+        </scene>
+        <!-- أفراد-->
+        <scene sceneID="xCp-zO-pbt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UmC-Um-73c" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title=" أفراد" id="D59-qe-xHm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3xK-7y-OFd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9wW-ka-FcR" kind="relationship" relationship="rootViewController" id="HM5-Tu-nCa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVe-7T-UkO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1292" y="-342.27886056971516"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo" width="125" height="22.5"/>
         <image name="bookmark" catalog="system" width="56" height="64"/>
-        <image name="checkbox" width="341" height="341"/>
         <image name="email" width="512" height="512"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
-        <image name="location" width="512" height="512"/>
         <image name="location" catalog="system" width="64" height="56"/>
+        <image name="location" width="512" height="512"/>
         <image name="passwordIcon" width="512" height="512"/>
         <image name="person.fill" catalog="system" width="64" height="60"/>
         <image name="staroflife.fill" catalog="system" width="62" height="64"/>
         <image name="tradement" width="512" height="512"/>
-        <image name="unchecked" width="170.5" height="170.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Hoi-Jo-X1J"/>
+        <segue reference="mrN-bm-iDk"/>
     </inferredMetricsTieBreakers>
 </document>

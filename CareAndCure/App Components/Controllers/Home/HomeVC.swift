@@ -51,7 +51,6 @@ class HomeVC: UIViewController {
         var isSearchBarEmpty: Bool {
             return searchController.searchBar.text?.isEmpty ?? true
         }
-//        navigationController?.navigationBar.prefersLargeTitles = true
         
     }
     
@@ -59,6 +58,7 @@ class HomeVC: UIViewController {
     fileprivate func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+//        self.tableView.backgroundColor = #colorLiteral(red: 0.5187388062, green: 0.7332572937, blue: 0.7236401439, alpha: 1)
         tableView.register(UINib(nibName: "TreatmentCell", bundle: nil),forCellReuseIdentifier: "cellId")
     }
     

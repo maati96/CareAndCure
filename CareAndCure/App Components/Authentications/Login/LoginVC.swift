@@ -20,9 +20,8 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextFiled: UITextField!
-    @IBOutlet var pharmaciesBtn: UIButton!
-    @IBOutlet var personBtnChecked: UIButton!
     @IBOutlet weak var createnewAccountBtn: UIButton!
+    
     var validation = Validation()
     
     override func viewDidLoad() {
@@ -40,15 +39,7 @@ class LoginVC: UIViewController {
         
     }
     
-    @IBAction func checkBoxTapped(_ sender: UIButton) {
-        if sender.tag == 1 {
-            pharmaciesBtn.setImage(#imageLiteral(resourceName: "unchecked"), for: .normal)
-            personBtnChecked.setImage(#imageLiteral(resourceName: "checkbox"), for: .normal)
-        } else {
-            pharmaciesBtn.setImage(#imageLiteral(resourceName: "checkbox"), for: .normal)
-            personBtnChecked.setImage(#imageLiteral(resourceName: "unchecked"), for: .normal)
-        }
-    }
+
     
     
     @IBAction func createNewAccountBtnPressed(_ sender: UIButton) {

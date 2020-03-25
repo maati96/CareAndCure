@@ -90,10 +90,9 @@
 		DA5B67DD242A7B2D0077C3AD /* App Components */ = {
 			isa = PBXGroup;
 			children = (
-				DAAB934E242A7C2C00C99F36 /* TreatmentDetailsVC */,
-				DAAB934D242A7C1400C99F36 /* Profile */,
-				DAAB934C242A7BFE00C99F36 /* Order */,
-				DAAB934B242A7BEB00C99F36 /* Home */,
+				E4410540242C1C3D00647CBB /* Model */,
+				E441053F242C1C0B00647CBB /* Views */,
+				E4410541242C1C4900647CBB /* Controllers */,
 				DA5B67DF242A7B5E0077C3AD /* Authentications */,
 			);
 			path = "App Components";
@@ -152,18 +151,18 @@
 		DAAB934E242A7C2C00C99F36 /* TreatmentDetailsVC */ = {
 			isa = PBXGroup;
 			children = (
-				DAAB934F242A7C4E00C99F36 /* Views */,
 				E43A4DAD241312B100FBCBAB /* TreatmentDetailsVC.swift */,
 			);
 			path = TreatmentDetailsVC;
 			sourceTree = "<group>";
 		};
-		DAAB934F242A7C4E00C99F36 /* Views */ = {
+		DAAB934F242A7C4E00C99F36 /* TreatmentDetails */ = {
 			isa = PBXGroup;
 			children = (
+				E49EB31D2421557000700AD4 /* TreatmentCell.xib */,
 				E49EB31C2421557000700AD4 /* TreatmentCell.swift */,
 			);
-			path = Views;
+			path = TreatmentDetails;
 			sourceTree = "<group>";
 		};
 		E43A4DAF241318E300FBCBAB /* DroidKufi */ = {
@@ -175,6 +174,32 @@
 				E43A4DB3241318E300FBCBAB /* DroidKufi-Bold.ttf */,
 			);
 			path = DroidKufi;
+			sourceTree = "<group>";
+		};
+		E441053F242C1C0B00647CBB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAAB934F242A7C4E00C99F36 /* TreatmentDetails */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E4410540242C1C3D00647CBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4410541242C1C4900647CBB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAAB934E242A7C2C00C99F36 /* TreatmentDetailsVC */,
+				DAAB934D242A7C1400C99F36 /* Profile */,
+				DAAB934C242A7BFE00C99F36 /* Order */,
+				DAAB934B242A7BEB00C99F36 /* Home */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		E462A8902411BFD3008554DA = {
@@ -198,51 +223,42 @@
 		E462A89B2411BFD3008554DA /* CareAndCure */ = {
 			isa = PBXGroup;
 			children = (
-				E4645D7E242990C70078C2CF /* Extension+enum */,
+				E48BAF112427CD0C00ED1914 /* Supporting Files */,
+				E4645D7E242990C70078C2CF /* Utilities */,
+				E462A8B02411BFDF008554DA /* Resources */,
 				DA5B67DD242A7B2D0077C3AD /* App Components */,
-				E48BAF112427CD0C00ED1914 /* Support */,
-				E48BAF102427CD0300ED1914 /* Model */,
-				E462A8B02411BFDF008554DA /* View */,
-				E462A8AA2411BFD4008554DA /* Info.plist */,
-				E430512224281D65009011C1 /* AlertService.swift */,
 			);
 			path = CareAndCure;
 			sourceTree = "<group>";
 		};
-		E462A8B02411BFDF008554DA /* View */ = {
+		E462A8B02411BFDF008554DA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				E462A8A22411BFD3008554DA /* Main.storyboard */,
 				E462A8A72411BFD4008554DA /* LaunchScreen.storyboard */,
-				E49EB31D2421557000700AD4 /* TreatmentCell.xib */,
 			);
-			path = View;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		E4645D7E242990C70078C2CF /* Extension+enum */ = {
+		E4645D7E242990C70078C2CF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E430512224281D65009011C1 /* AlertService.swift */,
 				E47071CF2429C5CC0022B62F /* Validation.swift */,
 			);
-			path = "Extension+enum";
+			path = Utilities;
 			sourceTree = "<group>";
 		};
-		E48BAF102427CD0300ED1914 /* Model */ = {
+		E48BAF112427CD0C00ED1914 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E48BAF112427CD0C00ED1914 /* Support */ = {
-			isa = PBXGroup;
-			children = (
+				E462A8AA2411BFD4008554DA /* Info.plist */,
 				E43A4DAF241318E300FBCBAB /* DroidKufi */,
 				E462A89C2411BFD3008554DA /* AppDelegate.swift */,
 				E462A89E2411BFD3008554DA /* SceneDelegate.swift */,
 				E462A8A52411BFD4008554DA /* Assets.xcassets */,
 			);
-			path = Support;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -522,7 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCNK42956L;
-				INFOPLIST_FILE = CareAndCure/Info.plist;
+				INFOPLIST_FILE = "CareAndCure/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,7 +557,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCNK42956L;
-				INFOPLIST_FILE = CareAndCure/Info.plist;
+				INFOPLIST_FILE = "CareAndCure/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

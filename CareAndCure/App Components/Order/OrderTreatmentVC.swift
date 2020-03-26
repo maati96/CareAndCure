@@ -51,7 +51,7 @@ extension OrderTreatmentVC: UIImagePickerControllerDelegate, UINavigationControl
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        self.showAlert(style: .actionSheet, title: "Choose Your Image", message: nil, actions: [photoLibraryAction, photoCamiraAction, cancelAction], completion: nil)
+        AlertService.showAlert(style: .actionSheet, title: "Choose Your Image", message: nil, actions: [photoLibraryAction, photoCamiraAction, cancelAction], completion: nil)
     }
     
     func showImagePicker(socureImage: UIImagePickerController.SourceType)  {

@@ -35,6 +35,9 @@ class CreateIndividualAcountVC: UIViewController {
     }
 
   
+    @IBAction func back(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func createAccountPressed(_ sender: UIButton) {
         

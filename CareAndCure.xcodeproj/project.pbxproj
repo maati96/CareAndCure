@@ -9,14 +9,11 @@
 /* Begin PBXBuildFile section */
 		94F1A97E9777B48B4B8CF0C1 /* Pods_CareAndCure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9474F10B9EAD3900FF9554F /* Pods_CareAndCure.framework */; };
 		E430512324281D65009011C1 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E430512224281D65009011C1 /* AlertService.swift */; };
-		E430512524282372009011C1 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E430512424282372009011C1 /* ProfileVC.swift */; };
 		E43A4DAC2413056B00FBCBAB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A4DAB2413056B00FBCBAB /* HomeVC.swift */; };
-		E43A4DAE241312B100FBCBAB /* TreatmentDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A4DAD241312B100FBCBAB /* TreatmentDetailsVC.swift */; };
 		E43A4DB4241318E300FBCBAB /* DroidKufi-Bold.arabic in Resources */ = {isa = PBXBuildFile; fileRef = E43A4DB0241318E300FBCBAB /* DroidKufi-Bold.arabic */; };
 		E43A4DB5241318E300FBCBAB /* DroidKufi-Bold.menu in Resources */ = {isa = PBXBuildFile; fileRef = E43A4DB1241318E300FBCBAB /* DroidKufi-Bold.menu */; };
 		E43A4DB6241318E300FBCBAB /* DroidKufi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E43A4DB2241318E300FBCBAB /* DroidKufi-Regular.ttf */; };
 		E43A4DB7241318E300FBCBAB /* DroidKufi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E43A4DB3241318E300FBCBAB /* DroidKufi-Bold.ttf */; };
-		E45C9C45242AA17A00AEA6E5 /* CreateIndividualAcountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C9C44242AA17A00AEA6E5 /* CreateIndividualAcountVC.swift */; };
 		E45C9C47242AA18400AEA6E5 /* CreateCompanyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C9C46242AA18400AEA6E5 /* CreateCompanyAccountVC.swift */; };
 		E462A89D2411BFD3008554DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462A89C2411BFD3008554DA /* AppDelegate.swift */; };
 		E462A89F2411BFD3008554DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462A89E2411BFD3008554DA /* SceneDelegate.swift */; };
@@ -25,23 +22,23 @@
 		E462A8A62411BFD4008554DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E462A8A52411BFD4008554DA /* Assets.xcassets */; };
 		E462A8A92411BFD4008554DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E462A8A72411BFD4008554DA /* LaunchScreen.storyboard */; };
 		E47071D02429C5CC0022B62F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47071CF2429C5CC0022B62F /* Validation.swift */; };
-		E48BAF0F2427CC9C00ED1914 /* OrderTreatmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48BAF0E2427CC9C00ED1914 /* OrderTreatmentVC.swift */; };
 		E49EB31E2421557000700AD4 /* TreatmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49EB31C2421557000700AD4 /* TreatmentCell.swift */; };
 		E49EB31F2421557000700AD4 /* TreatmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49EB31D2421557000700AD4 /* TreatmentCell.xib */; };
+		E4B3B672242C414A003DE271 /* CreateIndividualAcountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B3B671242C4149003DE271 /* CreateIndividualAcountVC.swift */; };
+		E4B3B674242C416F003DE271 /* OrderTreatmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B3B673242C416F003DE271 /* OrderTreatmentVC.swift */; };
+		E4B3B676242C419E003DE271 /* TreatmentDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B3B675242C419E003DE271 /* TreatmentDetailsVC.swift */; };
+		E4B3B679242C431C003DE271 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B3B678242C431C003DE271 /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6FB3CB1DB49C0FAC007A1033 /* Pods-CareAndCure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareAndCure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareAndCure/Pods-CareAndCure.debug.xcconfig"; sourceTree = "<group>"; };
 		704FED858AD05126874E9019 /* Pods-CareAndCure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareAndCure.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareAndCure/Pods-CareAndCure.release.xcconfig"; sourceTree = "<group>"; };
 		E430512224281D65009011C1 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
-		E430512424282372009011C1 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		E43A4DAB2413056B00FBCBAB /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		E43A4DAD241312B100FBCBAB /* TreatmentDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentDetailsVC.swift; sourceTree = "<group>"; };
 		E43A4DB0241318E300FBCBAB /* DroidKufi-Bold.arabic */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidKufi-Bold.arabic"; sourceTree = "<group>"; };
 		E43A4DB1241318E300FBCBAB /* DroidKufi-Bold.menu */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidKufi-Bold.menu"; sourceTree = "<group>"; };
 		E43A4DB2241318E300FBCBAB /* DroidKufi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidKufi-Regular.ttf"; sourceTree = "<group>"; };
 		E43A4DB3241318E300FBCBAB /* DroidKufi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidKufi-Bold.ttf"; sourceTree = "<group>"; };
-		E45C9C44242AA17A00AEA6E5 /* CreateIndividualAcountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateIndividualAcountVC.swift; path = "../../../../../CareAndCure 2/CareAndCure/CreateIndividualAcountVC.swift"; sourceTree = "<group>"; };
 		E45C9C46242AA18400AEA6E5 /* CreateCompanyAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCompanyAccountVC.swift; sourceTree = "<group>"; };
 		E462A8992411BFD3008554DA /* CareAndCure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareAndCure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E462A89C2411BFD3008554DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,9 +49,12 @@
 		E462A8A82411BFD4008554DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E462A8AA2411BFD4008554DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E47071CF2429C5CC0022B62F /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
-		E48BAF0E2427CC9C00ED1914 /* OrderTreatmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTreatmentVC.swift; sourceTree = "<group>"; };
 		E49EB31C2421557000700AD4 /* TreatmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentCell.swift; sourceTree = "<group>"; };
 		E49EB31D2421557000700AD4 /* TreatmentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreatmentCell.xib; sourceTree = "<group>"; };
+		E4B3B671242C4149003DE271 /* CreateIndividualAcountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateIndividualAcountVC.swift; sourceTree = "<group>"; };
+		E4B3B673242C416F003DE271 /* OrderTreatmentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderTreatmentVC.swift; path = "CareAndCure/App Components/Order/OrderTreatmentVC.swift"; sourceTree = SOURCE_ROOT; };
+		E4B3B675242C419E003DE271 /* TreatmentDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreatmentDetailsVC.swift; path = "CareAndCure/App Components/TreatmentDetailsVC/TreatmentDetailsVC.swift"; sourceTree = SOURCE_ROOT; };
+		E4B3B678242C431C003DE271 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		F9474F10B9EAD3900FF9554F /* Pods_CareAndCure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareAndCure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,7 +93,6 @@
 				E4410540242C1C3D00647CBB /* Model */,
 				E441053F242C1C0B00647CBB /* Views */,
 				E4410541242C1C4900647CBB /* Controllers */,
-				DA5B67DF242A7B5E0077C3AD /* Authentications */,
 			);
 			path = "App Components";
 			sourceTree = "<group>";
@@ -119,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				E45C9C46242AA18400AEA6E5 /* CreateCompanyAccountVC.swift */,
-				E45C9C44242AA17A00AEA6E5 /* CreateIndividualAcountVC.swift */,
+				E4B3B671242C4149003DE271 /* CreateIndividualAcountVC.swift */,
 			);
 			path = Registeration;
 			sourceTree = "<group>";
@@ -135,23 +134,15 @@
 		DAAB934C242A7BFE00C99F36 /* Order */ = {
 			isa = PBXGroup;
 			children = (
-				E48BAF0E2427CC9C00ED1914 /* OrderTreatmentVC.swift */,
+				E4B3B673242C416F003DE271 /* OrderTreatmentVC.swift */,
 			);
 			path = Order;
-			sourceTree = "<group>";
-		};
-		DAAB934D242A7C1400C99F36 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				E430512424282372009011C1 /* ProfileVC.swift */,
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		DAAB934E242A7C2C00C99F36 /* TreatmentDetailsVC */ = {
 			isa = PBXGroup;
 			children = (
-				E43A4DAD241312B100FBCBAB /* TreatmentDetailsVC.swift */,
+				E4B3B675242C419E003DE271 /* TreatmentDetailsVC.swift */,
 			);
 			path = TreatmentDetailsVC;
 			sourceTree = "<group>";
@@ -194,8 +185,9 @@
 		E4410541242C1C4900647CBB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E4B3B677242C430A003DE271 /* Profile */,
+				DA5B67DF242A7B5E0077C3AD /* Authentications */,
 				DAAB934E242A7C2C00C99F36 /* TreatmentDetailsVC */,
-				DAAB934D242A7C1400C99F36 /* Profile */,
 				DAAB934C242A7BFE00C99F36 /* Order */,
 				DAAB934B242A7BEB00C99F36 /* Home */,
 			);
@@ -261,6 +253,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E4B3B677242C430A003DE271 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E4B3B678242C431C003DE271 /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,7 +272,7 @@
 				E462A8952411BFD3008554DA /* Sources */,
 				E462A8962411BFD3008554DA /* Frameworks */,
 				E462A8972411BFD3008554DA /* Resources */,
-				36B3D5DB045E22D6F75911F6 /* [CP] Embed Pods Frameworks */,
+				099EB3837E0A3E772B5BF39E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,7 +335,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		36B3D5DB045E22D6F75911F6 /* [CP] Embed Pods Frameworks */ = {
+		099EB3837E0A3E772B5BF39E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,17 +380,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B3B679242C431C003DE271 /* ProfileVC.swift in Sources */,
 				E45C9C47242AA18400AEA6E5 /* CreateCompanyAccountVC.swift in Sources */,
 				E462A8A12411BFD3008554DA /* LoginVC.swift in Sources */,
-				E45C9C45242AA17A00AEA6E5 /* CreateIndividualAcountVC.swift in Sources */,
 				E43A4DAC2413056B00FBCBAB /* HomeVC.swift in Sources */,
-				E48BAF0F2427CC9C00ED1914 /* OrderTreatmentVC.swift in Sources */,
 				E430512324281D65009011C1 /* AlertService.swift in Sources */,
 				E462A89D2411BFD3008554DA /* AppDelegate.swift in Sources */,
-				E43A4DAE241312B100FBCBAB /* TreatmentDetailsVC.swift in Sources */,
+				E4B3B674242C416F003DE271 /* OrderTreatmentVC.swift in Sources */,
 				E462A89F2411BFD3008554DA /* SceneDelegate.swift in Sources */,
-				E430512524282372009011C1 /* ProfileVC.swift in Sources */,
+				E4B3B672242C414A003DE271 /* CreateIndividualAcountVC.swift in Sources */,
 				E47071D02429C5CC0022B62F /* Validation.swift in Sources */,
+				E4B3B676242C419E003DE271 /* TreatmentDetailsVC.swift in Sources */,
 				E49EB31E2421557000700AD4 /* TreatmentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

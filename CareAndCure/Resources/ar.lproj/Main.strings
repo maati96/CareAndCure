@@ -1,0 +1,165 @@
+
+/* Class = "UITextField"; placeholder = "رقم الموبايل"; ObjectID = "0nW-9n-NKm"; */
+"0nW-9n-NKm.placeholder" = "رقم الموبايل";
+
+/* Class = "UITextField"; text = "النوع"; ObjectID = "1gJ-BM-zYL"; */
+"1gJ-BM-zYL.text" = "النوع";
+
+/* Class = "UILabel"; text = "النوع"; ObjectID = "2ci-rk-dx9"; */
+"2ci-rk-dx9.text" = "النوع";
+
+/* Class = "UIButton"; normalTitle = "طلب"; ObjectID = "2e1-kj-EbA"; */
+"2e1-kj-EbA.normalTitle" = "طلب";
+
+/* Class = "UITextField"; placeholder = "كلمة السر"; ObjectID = "3LV-4j-7Pw"; */
+"3LV-4j-7Pw.placeholder" = "كلمة السر";
+
+/* Class = "UINavigationItem"; title = "طلب علاج"; ObjectID = "439-fE-bA3"; */
+"439-fE-bA3.title" = "طلب علاج";
+
+/* Class = "UILabel"; text = "نشر علاج"; ObjectID = "47S-9d-ueP"; */
+"47S-9d-ueP.text" = "نشر علاج";
+
+/* Class = "UIButton"; normalTitle = "رجوع"; ObjectID = "6Lx-Q0-SdO"; */
+"6Lx-Q0-SdO.normalTitle" = "رجوع";
+
+/* Class = "UILabel"; text = "الصلاحية:"; ObjectID = "7dn-z9-cDp"; */
+"7dn-z9-cDp.text" = "الصلاحية:";
+
+/* Class = "UILabel"; text = "إنشاء حساب أفراد"; ObjectID = "Ae8-gd-7zi"; */
+"Ae8-gd-7zi.text" = "إنشاء حساب أفراد";
+
+/* Class = "UITabBarItem"; title = " أفراد"; ObjectID = "D59-qe-xHm"; */
+"D59-qe-xHm.title" = " أفراد";
+
+/* Class = "UITextField"; placeholder = "السعر"; ObjectID = "Djo-fg-72F"; */
+"Djo-fg-72F.placeholder" = "السعر";
+
+/* Class = "UIButton"; normalTitle = "هنا"; ObjectID = "FAI-4N-C5D"; */
+"FAI-4N-C5D.normalTitle" = "هنا";
+
+/* Class = "UILabel"; text = "محمد أبو المعاطي"; ObjectID = "Hok-gr-1hj"; */
+"Hok-gr-1hj.text" = "محمد أبو المعاطي";
+
+/* Class = "UITextField"; text = "السعر"; ObjectID = "JOI-BY-tay"; */
+"JOI-BY-tay.text" = "السعر";
+
+/* Class = "UILabel"; text = "النوع: "; ObjectID = "Jbe-1A-v9m"; */
+"Jbe-1A-v9m.text" = "النوع: ";
+
+/* Class = "UITextField"; placeholder = "البريد الإلكتروني"; ObjectID = "KTG-Fe-Xmo"; */
+"KTG-Fe-Xmo.placeholder" = "البريد الإلكتروني";
+
+/* Class = "UITabBarItem"; title = "صيدليات"; ObjectID = "M14-u8-9q6"; */
+"M14-u8-9q6.title" = "صيدليات";
+
+/* Class = "UIButton"; normalTitle = "رجوع"; ObjectID = "NFq-wY-QND"; */
+"NFq-wY-QND.normalTitle" = "رجوع";
+
+/* Class = "UITextField"; placeholder = "رقم الموبايل"; ObjectID = "OHc-01-hdH"; */
+"OHc-01-hdH.placeholder" = "رقم الموبايل";
+
+/* Class = "UIButton"; normalTitle = "إنشاء حساب"; ObjectID = "OqY-Mt-Ufz"; */
+"OqY-Mt-Ufz.normalTitle" = "إنشاء حساب";
+
+/* Class = "UIButton"; normalTitle = "إنشاء حساب"; ObjectID = "SKm-lC-9s7"; */
+"SKm-lC-9s7.normalTitle" = "إنشاء حساب";
+
+/* Class = "UIButton"; normalTitle = "تحميل الصوره"; ObjectID = "Sk8-ah-YPl"; */
+"Sk8-ah-YPl.normalTitle" = "تحميل الصوره";
+
+/* Class = "UITextField"; placeholder = "تاريخ الصلاحيه"; ObjectID = "Ty9-Ri-tjj"; */
+"Ty9-Ri-tjj.placeholder" = "تاريخ الصلاحيه";
+
+/* Class = "UITextField"; placeholder = "اسم العلاج"; ObjectID = "Yca-zc-RwT"; */
+"Yca-zc-RwT.placeholder" = "اسم العلاج";
+
+/* Class = "UIViewController"; title = "OrderTreatment"; ObjectID = "Zae-VL-TzR"; */
+"Zae-VL-TzR.title" = "OrderTreatment";
+
+/* Class = "UITabBarItem"; title = "حسابي"; ObjectID = "ZqF-74-2MK"; */
+"ZqF-74-2MK.title" = "حسابي";
+
+/* Class = "UILabel"; text = "مجاني"; ObjectID = "aMN-ei-ReD"; */
+"aMN-ei-ReD.text" = "مجاني";
+
+/* Class = "UITextField"; placeholder = "الأسم الأخير"; ObjectID = "ckF-Wj-GCJ"; */
+"ckF-Wj-GCJ.placeholder" = "الأسم الأخير";
+
+/* Class = "UILabel"; text = "العنوان"; ObjectID = "dhM-qK-c49"; */
+"dhM-qK-c49.text" = "العنوان";
+
+/* Class = "UITextField"; placeholder = "النوع"; ObjectID = "dms-ag-i7w"; */
+"dms-ag-i7w.placeholder" = "النوع";
+
+/* Class = "UILabel"; text = "اسم العلاج"; ObjectID = "dqm-u1-5v3"; */
+"dqm-u1-5v3.text" = "اسم العلاج";
+
+/* Class = "UITabBarItem"; title = "الأدوية"; ObjectID = "dzM-XF-W0m"; */
+"dzM-XF-W0m.title" = "الأدوية";
+
+/* Class = "UITextField"; placeholder = "الاسم الأول"; ObjectID = "e7S-Yb-Bse"; */
+"e7S-Yb-Bse.placeholder" = "الاسم الأول";
+
+/* Class = "UITextField"; placeholder = "العنوان"; ObjectID = "fbx-jF-pex"; */
+"fbx-jF-pex.placeholder" = "العنوان";
+
+/* Class = "UITabBarItem"; title = "طلب"; ObjectID = "gef-UU-rb6"; */
+"gef-UU-rb6.title" = "طلب";
+
+/* Class = "UITextField"; text = "الموقع"; ObjectID = "gp9-Cx-eco"; */
+"gp9-Cx-eco.text" = "الموقع";
+
+/* Class = "UITabBarItem"; title = "تفاصيل "; ObjectID = "huS-UT-vll"; */
+"huS-UT-vll.title" = "تفاصيل ";
+
+/* Class = "UILabel"; text = "6-2020"; ObjectID = "idB-h2-6k9"; */
+"idB-h2-6k9.text" = "6-2020";
+
+/* Class = "UITextField"; placeholder = "البريد الإلكتروني"; ObjectID = "jR2-Hh-Rvk"; */
+"jR2-Hh-Rvk.placeholder" = "البريد الإلكتروني";
+
+/* Class = "UILabel"; text = "السعر"; ObjectID = "jgC-RI-b76"; */
+"jgC-RI-b76.text" = "السعر";
+
+/* Class = "UILabel"; text = "تسجيل الدخول"; ObjectID = "kEx-SS-Gz5"; */
+"kEx-SS-Gz5.text" = "تسجيل الدخول";
+
+/* Class = "UILabel"; text = "لإنشاء حساب جديد اضغط "; ObjectID = "lp5-5t-C7u"; */
+"lp5-5t-C7u.text" = "لإنشاء حساب جديد اضغط ";
+
+/* Class = "UITextField"; placeholder = "البريد الإلكتروني"; ObjectID = "mhz-gx-bra"; */
+"mhz-gx-bra.placeholder" = "البريد الإلكتروني";
+
+/* Class = "UILabel"; text = "إنشاء حساب الشركات"; ObjectID = "n5z-LB-g9G"; */
+"n5z-LB-g9G.text" = "إنشاء حساب الشركات";
+
+/* Class = "UILabel"; text = "مدينتك"; ObjectID = "nBX-Uf-Fyq"; */
+"nBX-Uf-Fyq.text" = "مدينتك";
+
+/* Class = "UIButton"; normalTitle = "استمرار"; ObjectID = "o4A-cG-PIG"; */
+"o4A-cG-PIG.normalTitle" = "استمرار";
+
+/* Class = "UINavigationItem"; title = "تفاصيل العلاج"; ObjectID = "qzv-wU-P6R"; */
+"qzv-wU-P6R.title" = "تفاصيل العلاج";
+
+/* Class = "UILabel"; text = "السعر: "; ObjectID = "sEC-8e-V2a"; */
+"sEC-8e-V2a.text" = "السعر: ";
+
+/* Class = "UITextField"; placeholder = "اسم الصيدليه"; ObjectID = "taJ-se-eoc"; */
+"taJ-se-eoc.placeholder" = "اسم الصيدليه";
+
+/* Class = "UIViewController"; title = "Profile"; ObjectID = "tmP-Xx-cfd"; */
+"tmP-Xx-cfd.title" = "Profile";
+
+/* Class = "UILabel"; text = "مجاني"; ObjectID = "tp3-52-geT"; */
+"tp3-52-geT.text" = "مجاني";
+
+/* Class = "UIViewController"; title = "CreateCompnyesAccount"; ObjectID = "twd-Zp-GmF"; */
+"twd-Zp-GmF.title" = "CreateCompnyesAccount";
+
+/* Class = "UIButton"; normalTitle = "نشر علاج"; ObjectID = "wL5-J0-7cR"; */
+"wL5-J0-7cR.normalTitle" = "نشر علاج";
+
+/* Class = "UINavigationItem"; title = "CareAndCure"; ObjectID = "xpk-gQ-5GO"; */
+"xpk-gQ-5GO.title" = "CareAndCure";

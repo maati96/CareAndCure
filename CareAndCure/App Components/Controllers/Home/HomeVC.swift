@@ -7,96 +7,90 @@
 //
 
 import UIKit
+import Alamofire
 import iOSDropDown
 
-class HomeVC: UIViewController {
+
+
+class HomeVC: UIViewController{
     
+    @IBOutlet weak var searchbar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    
-    @IBOutlet var priceLabel: DropDown!
     @IBOutlet weak var locationLabel: DropDown!
     @IBOutlet weak var treatementTypeLabel: DropDown!
-    
-    let imog = ["😍","🚎","🚝"]
-    
+ 
+    var treatment =  [AllTreatment]()  { didSet { filteredTreatment = treatment  } }
+    var filteredTreatment  = [AllTreatment]() { didSet { tableView.reloadData() }}
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        configreSearchController()
+        navigationController?.navigationBar.isTranslucent = false
         configureTableView()
+        searchbar.delegate = self
         
-        priceLabel.text = "السعر"
-        priceLabel.optionArray = ["20$","30$","50$","hhhh"]
         locationLabel.optionArray = ["المنصوره","الجيزه","دمياط","القاهرة"]
         treatementTypeLabel.optionArray = ["مسكنات","مضاد حيوي","كريمات"]
         
-        
-        
+        featchData()
     }
-    
-    fileprivate func configreSearchController() {
-        let searchController = UISearchController(searchResultsController: nil)
-        // 1
-        searchController.searchResultsUpdater = self
-        // 2
-        searchController.obscuresBackgroundDuringPresentation = false
-        // 3
-        searchController.searchBar.placeholder = "ابحث عن الدواء"
-        searchController.searchBar.searchBarStyle = .prominent
-        // 4
-        navigationItem.searchController = searchController
-        // 5
-        definesPresentationContext = true
-        
-        var isSearchBarEmpty: Bool {
-            return searchController.searchBar.text?.isEmpty ?? true
-        }
-        
-    }
-    
-    
+  
     fileprivate func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-//        self.tableView.backgroundColor = #colorLiteral(red: 0.5187388062, green: 0.7332572937, blue: 0.7236401439, alpha: 1)
         tableView.register(UINib(nibName: "TreatmentCell", bundle: nil),forCellReuseIdentifier: "cellId")
     }
-    
-    
 }
 
 
 extension HomeVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return filteredTreatment.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! TreatmentCell
-        cell.placeLabel.text = "المكان"
-        cell.priceLabel.text = "السعر"
-        cell.typeLabel.text = "النوع"
-        cell.tradementImageView.image = #imageLiteral(resourceName: "tradement")
+        cell.configure(item: filteredTreatment[indexPath.row])
+        
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
-    
-    
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "goToDetailVC", sender: nil)
+        let treatmentVC = storyboard?.instantiateViewController(identifier: "treatmentDetails") as! TreatmentDetailsVC
+        
+        treatmentVC.treatmentId = 2
+        self.navigationController?.pushViewController(treatmentVC, animated: true)
+    }
+        
+    func featchData()  {
+        view.showActivityIndicator(isUserInteractionEnabled: true)
+        Alamofire.request(TreatmentRouter.allTreatment).debugLog().responseData { [weak self] response in
+            guard let self = self else { return }
+            print("Show Response: ",String.init(data:response.data!, encoding:.utf8)!)
+            self.view.hideActivityIndicator()
+            switch response.result {
+            case .success(let data):
+                do {
+                    let result = try JSONDecoder().decode(AllTreatmentContainer.self, from: data)
+                    print(result)
+                    self.treatment = result.data ?? []
+                } catch {
+                    print(error.localizedDescription)
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
 }
 
-extension HomeVC: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        
+extension HomeVC: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredTreatment = searchText.isEmpty ?  treatment : treatment.filter { $0.name!.lowercased().contains(searchText.lowercased())}
     }
-    
-    
 }

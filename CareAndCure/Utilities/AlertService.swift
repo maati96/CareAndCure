@@ -9,6 +9,7 @@
 import UIKit
 
 
+
 class AlertService {
     
     static func showAlert(style: UIAlertController.Style, title: String?, message: String?, actions: [UIAlertAction] = [UIAlertAction(title: "Ok", style: .cancel, handler: nil)], completion: (() -> Swift.Void)? = nil) {
@@ -27,7 +28,15 @@ class AlertService {
 }
 
 extension UIApplication {
-    class func getTopMostViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+   
+    static let keyWindow = UIApplication.shared.connectedScenes
+    .filter({$0.activationState == .foregroundActive})
+    .map({$0 as? UIWindowScene})
+    .compactMap({$0})
+    .first?.windows
+    .filter({$0.isKeyWindow}).first
+    
+    class func getTopMostViewController(base: UIViewController? = keyWindow?.rootViewController) -> UIViewController? {
         if let nav = base as? UINavigationController {
             return getTopMostViewController(base: nav.visibleViewController)
         }

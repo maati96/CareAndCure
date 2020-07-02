@@ -7,4 +7,8 @@ target 'CareAndCure' do
   # Pods for CareAndCure
   pod 'iOSDropDown'
   pod 'IQKeyboardManagerSwift', '~> 6.5'
+  pod 'Alamofire', '~> 4.9.1'
+  pod 'Kingfisher'
+  pod 'MBProgressHUD'
+
 end

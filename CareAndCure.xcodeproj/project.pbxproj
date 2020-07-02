@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94F1A97E9777B48B4B8CF0C1 /* Pods_CareAndCure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9474F10B9EAD3900FF9554F /* Pods_CareAndCure.framework */; };
+		7F29105920F8DFF19C0B2C2C /* Pods_CareAndCure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D10013D0FFFBCE5487D12C79 /* Pods_CareAndCure.framework */; };
+		E40FA94824A8CD7E00502261 /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40FA94724A8CD7E00502261 /* EncodableExtension.swift */; };
+		E419533D24AA07700012ADDC /* TreatmentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E419533C24AA07700012ADDC /* TreatmentDetail.swift */; };
 		E430512324281D65009011C1 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E430512224281D65009011C1 /* AlertService.swift */; };
 		E43A4DAC2413056B00FBCBAB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A4DAB2413056B00FBCBAB /* HomeVC.swift */; };
 		E43A4DB4241318E300FBCBAB /* DroidKufi-Bold.arabic in Resources */ = {isa = PBXBuildFile; fileRef = E43A4DB0241318E300FBCBAB /* DroidKufi-Bold.arabic */; };
@@ -22,17 +24,29 @@
 		E462A8A62411BFD4008554DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E462A8A52411BFD4008554DA /* Assets.xcassets */; };
 		E462A8A92411BFD4008554DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E462A8A72411BFD4008554DA /* LaunchScreen.storyboard */; };
 		E47071D02429C5CC0022B62F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47071CF2429C5CC0022B62F /* Validation.swift */; };
+		E479EB06249EEF46008E489C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479EB05249EEF46008E489C /* Constants.swift */; };
+		E49E232424A7C56F00F63C28 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49E232324A7C56F00F63C28 /* UserDefault.swift */; };
+		E49E232624A7ED5700F63C28 /* Treatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49E232524A7ED5700F63C28 /* Treatment.swift */; };
+		E49E232824A7F66B00F63C28 /* TreatmentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49E232724A7F66B00F63C28 /* TreatmentRouter.swift */; };
 		E49EB31E2421557000700AD4 /* TreatmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49EB31C2421557000700AD4 /* TreatmentCell.swift */; };
 		E49EB31F2421557000700AD4 /* TreatmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49EB31D2421557000700AD4 /* TreatmentCell.xib */; };
 		E4B3B672242C414A003DE271 /* CreateIndividualAcountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B3B671242C4149003DE271 /* CreateIndividualAcountVC.swift */; };
 		E4B3B674242C416F003DE271 /* OrderTreatmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B3B673242C416F003DE271 /* OrderTreatmentVC.swift */; };
 		E4B3B676242C419E003DE271 /* TreatmentDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B3B675242C419E003DE271 /* TreatmentDetailsVC.swift */; };
 		E4B3B679242C431C003DE271 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B3B678242C431C003DE271 /* ProfileVC.swift */; };
+		E4E079602473178700021330 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E0795F2473178700021330 /* AuthRouter.swift */; };
+		E4E0796224731CCC00021330 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E0796124731CCC00021330 /* URLRequestConvertible.swift */; };
+		E4E07964247322DF00021330 /* AlamofireExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E07963247322DF00021330 /* AlamofireExtensions.swift */; };
+		E4E0796824732D9D00021330 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E0796724732D9D00021330 /* UIViewExtension.swift */; };
+		E4ED481E24A0F215004DF1F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ED481D24A0F215004DF1F0 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6FB3CB1DB49C0FAC007A1033 /* Pods-CareAndCure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareAndCure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareAndCure/Pods-CareAndCure.debug.xcconfig"; sourceTree = "<group>"; };
-		704FED858AD05126874E9019 /* Pods-CareAndCure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareAndCure.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareAndCure/Pods-CareAndCure.release.xcconfig"; sourceTree = "<group>"; };
+		496C27C09E2EB116F288BCE7 /* Pods-CareAndCure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareAndCure.release.xcconfig"; path = "Target Support Files/Pods-CareAndCure/Pods-CareAndCure.release.xcconfig"; sourceTree = "<group>"; };
+		9184C92FFD4430D52189C7EF /* Pods-CareAndCure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareAndCure.debug.xcconfig"; path = "Target Support Files/Pods-CareAndCure/Pods-CareAndCure.debug.xcconfig"; sourceTree = "<group>"; };
+		D10013D0FFFBCE5487D12C79 /* Pods_CareAndCure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareAndCure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40FA94724A8CD7E00502261 /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
+		E419533C24AA07700012ADDC /* TreatmentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentDetail.swift; sourceTree = "<group>"; };
 		E430512224281D65009011C1 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		E43A4DAB2413056B00FBCBAB /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		E43A4DB0241318E300FBCBAB /* DroidKufi-Bold.arabic */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidKufi-Bold.arabic"; sourceTree = "<group>"; };
@@ -49,13 +63,21 @@
 		E462A8A82411BFD4008554DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E462A8AA2411BFD4008554DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E47071CF2429C5CC0022B62F /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		E479EB05249EEF46008E489C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E49E232324A7C56F00F63C28 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		E49E232524A7ED5700F63C28 /* Treatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treatment.swift; sourceTree = "<group>"; };
+		E49E232724A7F66B00F63C28 /* TreatmentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentRouter.swift; sourceTree = "<group>"; };
 		E49EB31C2421557000700AD4 /* TreatmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentCell.swift; sourceTree = "<group>"; };
 		E49EB31D2421557000700AD4 /* TreatmentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreatmentCell.xib; sourceTree = "<group>"; };
 		E4B3B671242C4149003DE271 /* CreateIndividualAcountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateIndividualAcountVC.swift; sourceTree = "<group>"; };
 		E4B3B673242C416F003DE271 /* OrderTreatmentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderTreatmentVC.swift; path = "CareAndCure/App Components/Order/OrderTreatmentVC.swift"; sourceTree = SOURCE_ROOT; };
 		E4B3B675242C419E003DE271 /* TreatmentDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreatmentDetailsVC.swift; path = "CareAndCure/App Components/TreatmentDetailsVC/TreatmentDetailsVC.swift"; sourceTree = SOURCE_ROOT; };
 		E4B3B678242C431C003DE271 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
-		F9474F10B9EAD3900FF9554F /* Pods_CareAndCure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareAndCure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4E0795F2473178700021330 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		E4E0796124731CCC00021330 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
+		E4E07963247322DF00021330 /* AlamofireExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireExtensions.swift; sourceTree = "<group>"; };
+		E4E0796724732D9D00021330 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		E4ED481D24A0F215004DF1F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,34 +85,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94F1A97E9777B48B4B8CF0C1 /* Pods_CareAndCure.framework in Frameworks */,
+				7F29105920F8DFF19C0B2C2C /* Pods_CareAndCure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		29C7A0A8DF8A22C93F9F21A0 /* Pods */ = {
+		0825CBB1D1C2172B41FB309F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6FB3CB1DB49C0FAC007A1033 /* Pods-CareAndCure.debug.xcconfig */,
-				704FED858AD05126874E9019 /* Pods-CareAndCure.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		429CCEACDE94329BCD617295 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F9474F10B9EAD3900FF9554F /* Pods_CareAndCure.framework */,
+				D10013D0FFFBCE5487D12C79 /* Pods_CareAndCure.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E586152218AE1B73E22FD37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9184C92FFD4430D52189C7EF /* Pods-CareAndCure.debug.xcconfig */,
+				496C27C09E2EB116F288BCE7 /* Pods-CareAndCure.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		DA5B67DD242A7B2D0077C3AD /* App Components */ = {
 			isa = PBXGroup;
 			children = (
-				E4410540242C1C3D00647CBB /* Model */,
+				E446049F246B22C600E7087E /* Model */,
 				E441053F242C1C0B00647CBB /* Views */,
 				E4410541242C1C4900647CBB /* Controllers */,
 			);
@@ -147,13 +169,21 @@
 			path = TreatmentDetailsVC;
 			sourceTree = "<group>";
 		};
-		DAAB934F242A7C4E00C99F36 /* TreatmentDetails */ = {
+		DAAB934F242A7C4E00C99F36 /* TreatmentCell */ = {
 			isa = PBXGroup;
 			children = (
 				E49EB31D2421557000700AD4 /* TreatmentCell.xib */,
 				E49EB31C2421557000700AD4 /* TreatmentCell.swift */,
 			);
-			path = TreatmentDetails;
+			path = TreatmentCell;
+			sourceTree = "<group>";
+		};
+		E419533B24AA07450012ADDC /* TreatmentDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E419533C24AA07700012ADDC /* TreatmentDetail.swift */,
+			);
+			path = TreatmentDetail;
 			sourceTree = "<group>";
 		};
 		E43A4DAF241318E300FBCBAB /* DroidKufi */ = {
@@ -170,16 +200,10 @@
 		E441053F242C1C0B00647CBB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DAAB934F242A7C4E00C99F36 /* TreatmentDetails */,
+				E419533B24AA07450012ADDC /* TreatmentDetail */,
+				DAAB934F242A7C4E00C99F36 /* TreatmentCell */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		E4410540242C1C3D00647CBB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		E4410541242C1C4900647CBB /* Controllers */ = {
@@ -194,13 +218,22 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		E446049F246B22C600E7087E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4ED481D24A0F215004DF1F0 /* User.swift */,
+				E49E232524A7ED5700F63C28 /* Treatment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E462A8902411BFD3008554DA = {
 			isa = PBXGroup;
 			children = (
 				E462A89B2411BFD3008554DA /* CareAndCure */,
 				E462A89A2411BFD3008554DA /* Products */,
-				29C7A0A8DF8A22C93F9F21A0 /* Pods */,
-				429CCEACDE94329BCD617295 /* Frameworks */,
+				7E586152218AE1B73E22FD37 /* Pods */,
+				0825CBB1D1C2172B41FB309F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,28 +248,33 @@
 		E462A89B2411BFD3008554DA /* CareAndCure */ = {
 			isa = PBXGroup;
 			children = (
-				E48BAF112427CD0C00ED1914 /* Supporting Files */,
+				E4E0795E2473177100021330 /* Network */,
 				E4645D7E242990C70078C2CF /* Utilities */,
-				E462A8B02411BFDF008554DA /* Resources */,
+				E462A8B02411BFDF008554DA /* Storyboards */,
 				DA5B67DD242A7B2D0077C3AD /* App Components */,
+				E48BAF112427CD0C00ED1914 /* Supporting Files */,
 			);
 			path = CareAndCure;
 			sourceTree = "<group>";
 		};
-		E462A8B02411BFDF008554DA /* Resources */ = {
+		E462A8B02411BFDF008554DA /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				E462A8A22411BFD3008554DA /* Main.storyboard */,
 				E462A8A72411BFD4008554DA /* LaunchScreen.storyboard */,
 			);
-			path = Resources;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		E4645D7E242990C70078C2CF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E4E0796724732D9D00021330 /* UIViewExtension.swift */,
 				E430512224281D65009011C1 /* AlertService.swift */,
 				E47071CF2429C5CC0022B62F /* Validation.swift */,
+				E479EB05249EEF46008E489C /* Constants.swift */,
+				E49E232324A7C56F00F63C28 /* UserDefault.swift */,
+				E40FA94724A8CD7E00502261 /* EncodableExtension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -261,6 +299,17 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		E4E0795E2473177100021330 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E4E07963247322DF00021330 /* AlamofireExtensions.swift */,
+				E4E0796124731CCC00021330 /* URLRequestConvertible.swift */,
+				E4E0795F2473178700021330 /* AuthRouter.swift */,
+				E49E232724A7F66B00F63C28 /* TreatmentRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,11 +317,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E462A8AD2411BFD4008554DA /* Build configuration list for PBXNativeTarget "CareAndCure" */;
 			buildPhases = (
-				5CB24E1D8CA82A5E53CEEE9B /* [CP] Check Pods Manifest.lock */,
+				7FA4917C6AD9B0E467164934 /* [CP] Check Pods Manifest.lock */,
 				E462A8952411BFD3008554DA /* Sources */,
 				E462A8962411BFD3008554DA /* Frameworks */,
 				E462A8972411BFD3008554DA /* Resources */,
-				099EB3837E0A3E772B5BF39E /* [CP] Embed Pods Frameworks */,
+				B1C1427341414B5DE3A824B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,42 +384,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		099EB3837E0A3E772B5BF39E /* [CP] Embed Pods Frameworks */ = {
+		7FA4917C6AD9B0E467164934 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CareAndCure/Pods-CareAndCure-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/iOSDropDown/iOSDropDown.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSDropDown.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CareAndCure/Pods-CareAndCure-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5CB24E1D8CA82A5E53CEEE9B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CareAndCure-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1C1427341414B5DE3A824B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareAndCure/Pods-CareAndCure-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareAndCure/Pods-CareAndCure-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CareAndCure/Pods-CareAndCure-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -383,15 +433,26 @@
 				E4B3B679242C431C003DE271 /* ProfileVC.swift in Sources */,
 				E45C9C47242AA18400AEA6E5 /* CreateCompanyAccountVC.swift in Sources */,
 				E462A8A12411BFD3008554DA /* LoginVC.swift in Sources */,
+				E4E07964247322DF00021330 /* AlamofireExtensions.swift in Sources */,
 				E43A4DAC2413056B00FBCBAB /* HomeVC.swift in Sources */,
 				E430512324281D65009011C1 /* AlertService.swift in Sources */,
+				E4E079602473178700021330 /* AuthRouter.swift in Sources */,
+				E40FA94824A8CD7E00502261 /* EncodableExtension.swift in Sources */,
+				E4E0796824732D9D00021330 /* UIViewExtension.swift in Sources */,
+				E419533D24AA07700012ADDC /* TreatmentDetail.swift in Sources */,
 				E462A89D2411BFD3008554DA /* AppDelegate.swift in Sources */,
 				E4B3B674242C416F003DE271 /* OrderTreatmentVC.swift in Sources */,
+				E49E232824A7F66B00F63C28 /* TreatmentRouter.swift in Sources */,
 				E462A89F2411BFD3008554DA /* SceneDelegate.swift in Sources */,
 				E4B3B672242C414A003DE271 /* CreateIndividualAcountVC.swift in Sources */,
 				E47071D02429C5CC0022B62F /* Validation.swift in Sources */,
 				E4B3B676242C419E003DE271 /* TreatmentDetailsVC.swift in Sources */,
 				E49EB31E2421557000700AD4 /* TreatmentCell.swift in Sources */,
+				E4E0796224731CCC00021330 /* URLRequestConvertible.swift in Sources */,
+				E49E232424A7C56F00F63C28 /* UserDefault.swift in Sources */,
+				E479EB06249EEF46008E489C /* Constants.swift in Sources */,
+				E49E232624A7ED5700F63C28 /* Treatment.swift in Sources */,
+				E4ED481E24A0F215004DF1F0 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -481,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -533,7 +596,7 @@
 		};
 		E462A8AE2411BFD4008554DA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FB3CB1DB49C0FAC007A1033 /* Pods-CareAndCure.debug.xcconfig */;
+			baseConfigurationReference = 9184C92FFD4430D52189C7EF /* Pods-CareAndCure.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,7 +615,7 @@
 		};
 		E462A8AF2411BFD4008554DA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 704FED858AD05126874E9019 /* Pods-CareAndCure.release.xcconfig */;
+			baseConfigurationReference = 496C27C09E2EB116F288BCE7 /* Pods-CareAndCure.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

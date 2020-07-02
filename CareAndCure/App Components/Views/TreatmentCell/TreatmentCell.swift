@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import Kingfisher
 
 class TreatmentCell: UITableViewCell {
 
     @IBOutlet weak var tradementImageView: UIImageView!
     @IBOutlet weak var placeLabel: UILabel!
-    @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var treatmentNameLabel: UILabel!
+    @IBOutlet weak var ownerNameLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,16 +24,15 @@ class TreatmentCell: UITableViewCell {
         tradementImageView.clipsToBounds = true
         
     }
-
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configure(item: AllTreatment) {
+        placeLabel.text = (item.city! as NSNumber).stringValue
+        treatmentNameLabel.text = item.name
+        priceLabel.text = (item.price! as NSNumber).stringValue
+        ownerNameLabel.text = item.owner
+        tradementImageView.kf.indicatorType = .activity
+        tradementImageView.kf.setImage(with: URL(string: item.image ?? "no Image")!)
     }
     
-   
-    
 
-    
 }

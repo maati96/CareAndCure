@@ -14,10 +14,6 @@ protocol NibLoadable {
 }
 extension UIView {
     
-    static var nib: UINib {
-        return UINib(nibName: self.className, bundle: nil)
-    }
-    
     func showActivityIndicator(isUserInteractionEnabled: Bool) {
         DispatchQueue.main.async {
             let hud = MBProgressHUD.showAdded(to: self, animated: true)

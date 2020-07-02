@@ -8,9 +8,9 @@
 
 import UIKit
 import CoreLocation
+import Alamofire
 
 class ProfileVC: UIViewController {
-    
     
     @IBOutlet weak var imgeProfile: UIImageView! {
         didSet {
@@ -21,7 +21,7 @@ class ProfileVC: UIViewController {
             imgeProfile.clipsToBounds = true
         }
     }
-    
+    var login = LoginVC()
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var locationNameLabel: UILabel!
     @IBOutlet weak var locationBtn: UIButton!
@@ -31,17 +31,41 @@ class ProfileVC: UIViewController {
     var location = CLLocation()
     var isUpdatingLocation = false
     var lastLocationError: Error?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "تم تسجيل دخولك"
+        
+        navigationItem.rightBarButtonItem  = UIBarButtonItem(title: "خروج", style: .plain, target: self, action: #selector(handleSignOut))
         locationManager.requestWhenInUseAuthorization()
         if(CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||
             CLLocationManager.authorizationStatus() == .authorizedAlways) {
-        
         }
-        
+        featchData()
     }
     
-
+    @objc func handleSignOut() {
+        let login = storyboard?.instantiateViewController(withIdentifier: "loginVC")
+        UserDefault.instance.isLoggedIn = false
+        present(login!, animated: true, completion: nil)
+    }
+    
+    
+    func featchData()  {
+        //        Alamofire.request(AuthRouter.profile).debugLog().responseData { response in
+        //            switch response.result {
+        //            case .success(let data):
+        //                do {
+        //                    let result = try JSONDecoder().decode(Profile.self, from: data)
+        //                    print(result.count, result[0])
+        //                } catch {
+        //                    print(error.localizedDescription)
+        //                }
+        //            case .failure(let error):
+        //                print(error.localizedDescription)
+        //            }
+        //        }
+    }
     
     func startLocationManger() {
         if CLLocationManager.locationServicesEnabled() {
@@ -67,14 +91,15 @@ class ProfileVC: UIViewController {
         showImagePickerControllerActionSheet()
     }
     
+    
+    
+    
     func reportLocationServicesDeniedError() {
         let alert = UIAlertController(title: "Oops! location service disabled", message: "Plase go to settings > to enable location services for this app", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
     }
-    
-    
     
     
 }
@@ -111,45 +136,33 @@ extension ProfileVC: UIImagePickerControllerDelegate, UINavigationControllerDele
         }
         dismiss(animated: true, completion: nil)
     }
-}
-
-extension ProfileVC: CLLocationManagerDelegate {
-   
-
+    
     @IBAction func locationBtnPressed(_ sender: UIButton) {
-        
-   
-
         // Create Location
-        
         let authorizationStatus = CLLocationManager.authorizationStatus()
-        
         if authorizationStatus == .notDetermined {
             locationManager.requestWhenInUseAuthorization()
             return
         }
-        
         if authorizationStatus == .denied || authorizationStatus == .restricted {
             reportLocationServicesDeniedError()
             return
         }
-        
         if isUpdatingLocation {
             stopLocationManger()
         }  else {
             lastLocationError = nil
             startLocationManger()
         }
-        
-        
         geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
             self.processResponse(withPlacemarks: placemarks, error: error)
         }
-      
         print("your location")
     }
     
+}
 
+extension ProfileVC: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error!! location Manger didfail with error\(error)")
         if (error as NSError).code == CLError.locationUnknown.rawValue {
@@ -165,49 +178,46 @@ extension ProfileVC: CLLocationManagerDelegate {
         stopLocationManger()
     }
     
-  private func processResponse(withPlacemarks placemarks: [CLPlacemark]?, error: Error?) {
-      // Update View
-        
+    private func processResponse(withPlacemarks placemarks: [CLPlacemark]?, error: Error?) {
+        if let error = error {
+            print("Unable to Reverse Geocode Location (\(error))")
+            locationNameLabel.text = "Unable to Find Address for Location"
+            
+        } else {
+            if let placemarks = placemarks, let placemark = placemarks.first {
+                locationNameLabel.text = placemark.compactAddress
+            } else {
+                locationNameLabel.text = "No Matching Addresses Found"
+            }
+        }
+    }
     
-      if let error = error {
-          print("Unable to Reverse Geocode Location (\(error))")
-          locationNameLabel.text = "Unable to Find Address for Location"
-
-      } else {
-          if let placemarks = placemarks, let placemark = placemarks.first {
-              locationNameLabel.text = placemark.compactAddress
-          } else {
-              locationNameLabel.text = "No Matching Addresses Found"
-          }
-      }
-  }
     
-   
     
 }
 
 extension CLPlacemark {
-
+    
     var compactAddress: String? {
         if let name = name {
             var result = name
-
+            
             if let street = thoroughfare {
                 result += ", \(street)"
             }
-
+            
             if let city = locality {
                 result += ", \(city)"
             }
-
+            
             if let country = country {
                 result += ", \(country)"
             }
-
+            
             return result
         }
-
+        
         return nil
     }
-
+    
 }
